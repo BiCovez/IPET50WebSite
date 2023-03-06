@@ -1,0 +1,923 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+ 
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+body {
+    background: linear-gradient(to bottom, #922B21, #7B241C, #641E16);
+    font-family: 'Oswald', sans-serif;
+}
+
+html, 
+body {
+    scroll-behavior: smooth;
+}
+
+#menu {
+    display: none;
+
+    
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #000;
+    transition: all .5s ease-out;
+}
+
+
+/******/
+
+.floatMenu {
+    background-color: rgba(65, 65, 65, 0.699);
+    width: 60%;
+    height: 50%;
+    border-radius: 10px;
+}
+
+/******/
+
+#menu-close {
+    left: 0.1em;
+    top: -0.1em;
+    position: absolute;
+    background-color: none;
+    font-size: 3em;
+    color: #fff;
+    background-color: #000;
+    cursor: pointer;
+}
+
+.infoFA {
+    width: 90%;
+    height: 50em;
+    position: absolute;
+    left: 5%; top: 5em;
+    color: #fff;
+    font-size: 1.5em;
+    text-align: left;
+}
+
+.header {
+	width: auto;
+	height: 800px;
+    background-image: url('../sources/img/background/escuelabg1.jpg');
+    background-size: 100%;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.scrollTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    padding: 10px 15px;
+    background-color: #1E1E1E;
+    color: #FFF;
+    border-radius: 50%;
+    border-radius: 1px solid #fff;
+    cursor: pointer;
+    transition: all 0.5s ease 0;
+    visibility: visible;
+}
+
+.scrollTop:hover {
+    transition: all 0.3s ease-in-out;
+    background-color: #000;
+}
+
+/* SCROLL BAR PERSONALIZADA */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    border: 5px solid #470A0A;
+    box-shadow: inset 0 0 2.5px rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #2c352c;
+    border-radius: 6px;
+}
+
+/* HEADER LOGO */
+
+.headerLogo {
+    position: absolute;
+    left: 3vw; top: 250px;
+}
+
+.headerLogo img {
+    width: 200px;
+    height: 300px;
+}
+
+/* FIN HEADER LOGO */
+
+.navbar {
+    width: 80%;
+    height: 8vh;
+    position: absolute;
+    left: 10%; bottom: 50px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav button {
+    margin: 0;
+    height: 40px;
+}
+
+.navBtn {
+    padding: 0 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 600;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+  
+.navBtn:hover {
+    background-color: rgb(196, 108, 9);
+    box-shadow: 0px 15px 20px rgba(196, 108, 9, 0.6);
+    color: #fff;
+    transform: translateY(-7px);
+}
+  
+.navBtn:active {
+    transform: translateY(-1px);
+}
+
+/* WAVE EFFECT */
+
+.wave {
+    position: absolute;
+    width: 100%;
+    bottom: 70px;
+}
+
+.wave img {
+    width: 100%;
+}
+
+/* FIN WAVE EFFECT */
+
+/* SOBRE NOSOTROS */
+
+.sobrenosotros {
+    width: 100%;
+    height: 125vh;
+    position: relative;
+    top: 50px;
+    z-index: 2px;
+}
+
+.container-sn {
+    width: 90%;
+    height: 80vh;
+    margin: 50px;
+}
+
+.container-sn h2 {
+    margin-top: 10px;
+    font-size: 30px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    color: #fff;
+    text-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50);
+    font-style: oblique;
+    letter-spacing: 1.5px;
+    padding-left: 50px;
+    position: relative;
+}
+
+.nosotros-text{ 
+    font-size: 20px; 
+    font-weight: 500;
+    color: #FFF;
+    position: relative;
+    margin: auto;
+    padding: 40px;
+}
+.containermentes{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 56%;
+    height: 16vh;
+    border: 2px solid rgb(196, 108, 9);
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 20px rgb(196, 108, 9), -5px -5px 20px rgb(196, 108, 9), inset 0 0 20px 10px rgb(196, 108, 9);
+}
+.containermentes p{
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    font-size: 32px;
+    font-weight: 500;
+    margin: auto;
+    text-transform: uppercase;
+}
+
+.intro-info {
+    position: relative;
+    padding: 0 0 20px 0;
+}
+
+.equipodirec {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.cuerpo {
+    position: relative;
+    padding: 0 0 20px 0;
+    left: 20px;
+}
+.cuerpo h4 {
+    position: relative;
+    left: -20px;
+    padding: 0 0 10px 0;
+    font-size: 22px;
+    letter-spacing: 0.5px;
+}
+
+.gestion {
+    position: relative;
+    left: 20px;
+}
+.gestion h4 {
+    position: relative;
+    left: -20px;
+    padding: 0 0 10px 0;
+    font-size: 22px;
+    letter-spacing: 0.5px;    
+} 
+
+.equipoimg {
+    width: 600px;
+    height: 350px;
+    background-color: #fff;
+    position: absolute;
+    right: 19%; top: 10px;
+    border-radius: 14px;
+    margin: auto;
+    visibility: hidden;
+}
+.equipoimg img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.counter {
+    width: 80%;
+    height: 25vh;
+    position: relative;
+    margin: auto;
+    top: 5vh;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.count {
+    width: 20%;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    position: relative;
+    color: #FBFBFB;
+    font-size: 18px;
+    font-weight: 300;
+}
+.count i {
+    font-size: 40px;
+    margin: auto;
+}
+.count p {
+    font-weight: 800;
+    font-size: 55px;
+}
+
+/* FIN SOBRE NOSOTROS */
+
+/* ESPECIALIDADES */
+
+.container-es {
+    width: 90%;
+    height: 150vh;
+    padding: 40px 0;
+    margin: auto;
+}
+
+.container-es h2 {
+    margin-top: 10px;
+    font-size: 30px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    color: #fff;
+    text-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50);
+    font-style: oblique;
+    letter-spacing: 1.5px;
+    padding-left: 50px;
+    position: relative;
+}
+
+.galery-port {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-top: 40px; 
+}
+
+.image-port {
+    position: relative;
+    height: 350px;
+    width: 35%;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50);
+    cursor: pointer;
+    margin: 50px;
+    background-color: #4F0000;
+}
+
+.image-port p {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+
+.image-port button {
+    border: none;
+}
+
+.container-es img {
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+    border-radius: 20px;
+}
+
+.image-port .galery-hover {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.30);
+    backdrop-filter: blur(10px);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+
+.image-port:hover > .galery-hover {
+    opacity: 1;
+    visibility: visible;
+} 
+
+.image-port:hover > .galery-hover h3 {
+    margin-top: 50px; 
+    margin-bottom: 25px;
+}
+
+.image-port:hover img {
+    transform: scale(1.3);
+}
+
+.image-port .galery-hover h3 {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 110px;
+    transition: all 500ms ease-out;
+    margin-top: 30px;
+}
+
+.image-port .galery-hover p {
+    color: #fff;
+    font-size: 23px;
+    line-height: 1.5;
+    max-width: 220px;
+    margin: auto;
+}
+
+/* FIN ESPECIALIDADES */
+
+/* FORMACION ACADEMICA */
+
+.form-academica {
+    position: relative;
+    top: 60px;
+    margin: auto;
+    width: 90%;
+    height: 75vh;
+}
+.form-academica h2 {
+    margin-top: 20px;
+    margin: auto;
+    font-size: 30px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    color: #fff;
+    text-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50);
+    font-style: oblique;
+    letter-spacing: 1.5px;
+    padding-left: 50px;
+    position: relative;
+}
+
+.cards-container {
+    width: 100%;
+    height: 80vh; 
+    position: relative;
+}
+
+.pre-cards {
+    width: 90%;
+    height: 25vh;
+    background-color: rgba(0, 0, 0, 0.40);
+    position: relative;
+    top: 7.5vh;
+    display: flex;
+    margin: auto;
+    border-radius: 8px;
+}
+
+.dp {
+    font-size: 25px;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    text-align: center;
+    color: #FBFBFB;
+}
+
+.others-btn {
+    width: 90%;
+    height: 25vh;
+    background-color: rgba(0, 0, 0, 0.40);
+    position: relative;
+    top: 12.5vh;
+    display: flex;
+    margin: auto;
+    border-radius: 8px;
+}
+
+.others {
+    font-size: 25px;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    text-align: center;
+    color: #FBFBFB;
+}
+
+.fa-buttons {
+    width: 90%;
+    margin: 40px auto;
+    text-align: center;
+}
+.fa-buttons a {
+    text-decoration: none;
+}
+
+button {
+   margin: 20px;
+   outline: none;
+}
+
+.custom-btn {
+    width: 150px;
+    height: 40px;
+    padding: 10px 20px;
+    border: 2px solid #000;
+    font-weight: 600;
+    background: rgb(250, 250, 250);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+}
+
+#o-btn {
+    width: 170px;
+}
+
+.btn-5 {
+    background: #FBFBFB;
+    color: #000;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+}
+
+.btn-5:hover{
+    background: #fff;
+    color: #000;
+    box-shadow: 
+    -7px -7px 20px 0px #fff9,
+    -4px -4px 5px 0px #fff9,
+    7px 7px 20px 0px #0002,
+     4px 4px 5px 0px #0001;
+}
+
+.btn-5:before, .btn-5:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: #000;
+    transition:400ms ease all;
+}
+
+.btn-5:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+}
+
+.btn-5:hover:before, .btn-5:hover:after{
+    width:100%;
+    transition:800ms ease all;
+}
+
+/* FIN FORMACION ACADEMICA */
+
+/* HISTORIA */
+
+.historia {
+    position: relative;
+    top: 40px;
+    margin: auto;
+    margin-top: 25px;
+    width: 100%;
+    height: 100vh; 
+}
+.historia h2 {
+    margin-top: 20px;
+    margin: auto;
+    font-size: 30px;
+    width: 92.5%;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    color: #fff;
+    text-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50);
+    font-style: oblique;
+    letter-spacing: 1.5px;
+    padding-left: 50px;
+    position: relative;
+}
+
+.historytext{
+    width: 90%; 
+    padding: 10px;
+    height: 120vh;
+    margin: auto;
+    
+}
+.historytext p{
+font-size: 20px; 
+font-weight: 500;      
+color: #FFF;
+position: relative;
+margin: auto;
+padding: 40px;
+
+}
+
+.container-pslider{
+    width: 95%;
+    height: 49.5vh;
+    border-radius: 10px;
+    position: absolute;
+    margin: auto;
+    left: 5%; top: 45%;
+}
+.slider{ /* EDITA EL CONTENEDOR DE FLEXSLIDER */
+    width: 40%;
+    height: 40vh;
+    border-radius: 10px;
+    position: absolute;
+    margin: auto;
+    left: 25%; bottom: 4vh;
+}
+.slidertext{
+    width: 52%;
+    height: 40vh;
+    border-radius: 10px;
+    position: absolute;
+    margin: auto;
+    top: 50px; right: 2.5%;
+}
+.slidertext p{
+    font-size: 18px;
+    font-weight: 500;
+    position: relative;
+    margin: auto;
+}
+
+.flexslider { /* EDITA EL CONTENEDOR DE LAS IMG */
+    width: 100%;
+    height: 40vh;
+    border: 5px solid white;
+    border-radius: 8px;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.70);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.slides,
+.slides li,
+.slides li img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.flex-control-nav.flex-control-paging {
+    padding: 20px 0px;
+    border-radius: 10px;
+    align-self: center;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: -49px;
+    z-index: 3;
+}
+
+.flex-control-nav li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.flex-control-nav li a {
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border: 0.5px solid black;
+    border-radius: 50%;
+    text-indent: -9999px;
+}
+
+.flex-control-nav li a.flex-active {
+    background-color: #353535;
+} 
+
+.flex-direction-nav {
+    z-index: 3;
+    list-style: none;
+}
+
+.flex-direction-nav a {
+    width: 60px;
+    height: 60px;
+    background-color: #1A89DF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.80);
+    position: absolute;
+    top: 50%;
+    margin-top: -30px;
+
+    transition: all 0.3s ease-in-out;
+}
+
+.flex-direction-nav a::before {
+    content: "\f104";
+    font-family: var(--fa-style-family, "Font Awesome 6 Free");
+    font-weight: var(--fa-style, 900);
+    font-size: 60px;
+    color: white;
+}
+
+.flex-direction-nav a.flex-next::before {
+    content: "\f105";
+}
+
+.flex-direction-nav .flex-prev{
+    left: 0px;
+    opacity: 0;
+}
+
+.flex-direction-nav .flex-next {
+    right: 0px;
+    opacity: 0;
+}
+
+.flexslider:hover .flex-direction-nav .flex-prev {
+    opacity: 1;
+    left: 15px;
+}
+
+.flexslider:hover .flex-direction-nav .flex-next {
+    opacity: 1;
+    right: 15px;
+}
+
+/* FIN HISTORIA */
+
+/* FOOTER *************************************************************************/
+
+.footer {
+    width: 100%;
+    height: 550px;
+    background: #3f130e;
+    position: relative;
+    border-radius: 5px;
+    padding: 60px 0 30px 0;
+    overflow: hidden;
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #FBFBFB;;
+}
+
+.content-footer{
+    text-align: center;
+}
+.content-footer a {
+    text-decoration: none;
+    color: #FBFBFB;
+}
+.content-footer h4{
+    color: #FBFBFB;
+    border-bottom: 3px solid #920000e3;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 18px;
+}
+.content-footer p{
+    color: #FBFBFB;
+}
+
+.redes {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #9e9797;
+}
+
+.content-footer iframe{
+    font-size: 40px;
+    border-radius: 20px;
+    padding-top: 10px;
+}
+
+/* FIN FOOTER */
+
+/* RESPONSIVE *********************************/
+
+@media (max-width: 1366px){
+
+    .header {
+        height: 550px;
+    }
+    .headerLogo {
+        top: 130px;
+    }
+
+    .wave {
+        bottom: 10px; 
+    }
+
+    .sobrenosotros{
+        top: 10px;
+        height: 200vh;
+    }
+
+    .equipoimg {
+        right: 30px;
+    }
+
+    .form-academica {
+        height: 120vh;
+    }
+
+    .pre-cards {
+        width: 90%;
+        height: 38vh;
+    }
+    
+    .others-btn {
+        height: 38vh;
+    }
+
+    .container-es {
+        height: 185vh;
+    }
+
+    .image-port {
+        width: 35%;
+        height: 250px;
+        margin: 35px;
+    }
+    .image-port .galery-hover h3{
+        font-size: 20px;
+    }
+    .image-port .galery-hover p{
+        font-size: 20px;
+    }
+    .image-port:hover > .galery-hover h3 {
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+    .historia{
+        height: 180vh;
+        width: 90%;
+        padding: 40px 0;
+        margin: auto;
+    }
+    .historytext{
+        width: 90%; 
+        padding: 10px;
+        height: 180vh;
+        margin: auto;
+    }
+    .container-pslider{
+        width: 95%;
+        height: 55vh;
+        border-radius: 10px;
+        position: absolute;
+        margin: auto;
+        left: -1%; top: 57%; 
+    }  
+    .slider{
+        width: 60%;
+        height: 50vh;
+    }
+    .flexslider {
+        height: 60vh;
+    }
+    .flex-control-nav li a {
+        width: 12.5px;
+        height: 12.5px;
+        border-radius: 50%;
+    }
+    
+    .footer {
+        height: 400px;
+    }
+    
+    .content-footer iframe {
+        width: 300px;
+        height: 200px;
+    }
+    
+    .contenedor-footer{
+        padding-bottom: 30px;
+    }
+    
+    .titulo-final{
+        margin: 10px 0 0 0;
+    }
+}
+
+/* FIN RESPONSIVE */
+

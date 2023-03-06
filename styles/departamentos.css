@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    overflow-x: hidden;
+    
+}
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    border: 5px solid #FBFBFB;
+    box-shadow: inset 0 0 2.5px rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #2c352c;
+    border-radius: 20px;
+}
+
+/* BACK BUTTON */
+
+.button {
+    width: 125px;
+    height: 50px;
+    border-radius: 4px;
+    background-color: rgba(75,75,75, 0.45);
+    margin: auto;
+    position: relative;
+    top: 20px; left: 20px;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    transition-duration: 0.4s;
+}
+.button:hover {
+    background-color: rgba(60, 90, 251, 0.50);
+    backdrop-filter: blur(10px); 
+    color: white;
+}
+
+/* BACK BUTTON FIN */
+
+/* CONTAINER DPTOS */
+
+.container {
+    width: 100%;
+    height: 725vh;
+    background-color: #FBFBFB;
+}
+
+.textFull {
+    font-size: 18px;
+    font-weight: 550;
+    letter-spacing: 0.75px;
+    text-align: justify;
+    top: 25%;
+    position: relative;
+}
+
+.containerInfo {
+    width: 95%;
+    height: 65vh;
+    margin: auto;
+    background-color: #F5F5F5;
+    position: relative;
+    top: 7.5vh;
+    border-radius: 2px;
+}
+
+/* CONTAINER DPTOS FIN */
+
+/* IMG */
+
+.imgContainer {
+    width: 350px;
+    height: 320px;
+    background-color: #2c352c;
+    position: absolute;
+    z-index: 657;
+    right: 10vw;
+    top: 28%;
+}
+
+/* IMG FIN */
+
+/* CS NATURALES */
+
+.containerCsNat {
+    width: 100%;
+    height: 80vh;
+    /* background-color: #2c352c; */
+}
+
+/* CS NATURALES FIN */
+
+/* CS SOCIALES */
+
+.containerCsSoc {
+    width: 100%;
+    height: 80vh;
+    /* background-color: #3f130e; */
+}
+
+/* CS SOCIALES FIN */
+
+/* MATEMATICAS */
+
+.containerMate {
+    width: 100%;
+    height: 80vh;
+    /* background-color: #2c352c; */
+}
+
+/* MATEMATICAS FIN */
+
+/* ECONOMIA */
+
+.containerEco {
+    width: 100%;
+    height: 80vh;
+    /* background-color: #3f130e; */
+}
+
+/* ECONOMIA FIN */
+
+/* LENGUA */
+
+.containerLengua {
+    width: 100%;
+    height: 80vh;
+    /* background-color: #2c352c; */
+}
+
+/* LENGUA FIN */
+
+/* EDUCACION FISICA */
+
+.containerEdFisica {
+    width: 100%;
+    height: 80vh;
+    /* background-color: #3f130e; */
+}
+
+/* EDUCACION FISICA FIN */
+
+/* INGLES */
+
+.containerIngles {
+    width: 100%;
+    height: 80vh;
+    /* background-color: #2c352c; */
+}
+
+/* INGLES FIN */
+
+/* ARTISTICA */
+
+.containerArte {
+    width: 100%;
+    height: 80vh;
+    /* background-color: #3f130e; */
+}
+
+/* ARTISTICA FIN */
+
+/* TECNOLOGIA */
+
+.containerTecno {
+    width: 100%;
+    height: 80vh;
+    /* background-color: #2c352c; */
+}
+
+/* TECNOLOGIA FIN */
+
+/* SELECTOR */
+
+.selector {
+    display: flex;
+    flex-direction: column;
+    z-index: 898;
+    position: fixed;
+    right: 30px;
+    top: 35%;
+}
+
+.selectorButton {
+    background-color: #BFBFBF;
+    width: 15px;
+    height: 15px;
+    top: 50%;
+    float: right;
+    border-radius: 50%;
+    margin: 5px 5px 5px 5px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.selectorButton:hover {
+    background-color: #717171;
+    transform: scale(1.5);
+}
+
+.selectorButton::before {
+    background-color: #717171;
+}
+
+/* SELECTOR FIN */
+
+/* FOOTER */
+
+.footer {
+    width: 100%;
+    height: 550px;
+    background-color: #3f130e;
+    position: relative;
+    border-radius: 5px;
+    padding: 60px 0 30px 0;
+    overflow: hidden;
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #FBFBFB;;
+}
+
+.content-footer{
+    text-align: center;
+}
+.content-footer a {
+    text-decoration: none;
+    color: #FBFBFB;
+}
+.content-footer h4{
+    color: #FBFBFB;
+    border-bottom: 3px solid #920000e3;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 18px;
+}
+.content-footer p{
+    color: #FBFBFB;
+}
+
+.redes {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #9e9797;
+}
+
+.content-footer iframe{
+    font-size: 40px;
+    border-radius: 20px;
+    padding-top: 10px;
+}
+
+@media (max-width: 1366px) {
+
+    .footer {
+        height: 400px;
+    }
+    
+    .content-footer iframe {
+        width: 300px;
+        height: 200px;
+    }
+    
+    .contenedor-footer{
+        padding-bottom: 30px;
+    }
+    
+    .titulo-final{
+        margin: 10px 0 0 0;
+    }
+}
